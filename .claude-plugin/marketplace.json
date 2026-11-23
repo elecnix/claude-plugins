@@ -11,7 +11,7 @@
       "source": {
         "source": "github",
         "repo": "elecnix/claude-gh-monitor",
-        "ref": "d466ae268512cff8e7c30d36a0a48a274032ed23"
+        "ref": "claude-plugin"
       },
       "description": "Monitor GitHub pull requests in Claude Code by wrapping the gh monitor CLI."
     },
