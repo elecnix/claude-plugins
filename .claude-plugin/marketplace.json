@@ -29,6 +29,14 @@
         "repo": "elecnix/skills-lock-autoinstall"
       },
       "description": "Auto-installs agent skills from an npx skills lock file (skills-lock.json) on session start."
+    },
+    {
+      "name": "your-attention",
+      "source": {
+        "source": "github",
+        "repo": "elecnix/your-attention"
+      },
+      "description": "One inbox where every coding agent asks you questions as cards, and your answers reach them at once."
     }
   ]
 }
