@@ -37,7 +37,8 @@
       "name": "your-attention",
       "source": {
         "source": "github",
-        "repo": "elecnix/your-attention"
+        "repo": "elecnix/your-attention",
+        "ref": "a5f70d51dfc6586f6768e129705a5ce7e0a128a6"
       },
       "description": "One inbox where every coding agent asks you questions as cards, and your answers reach them at once."
     }
