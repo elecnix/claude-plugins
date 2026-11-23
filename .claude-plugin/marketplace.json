@@ -10,7 +10,8 @@
       "name": "gh-monitor",
       "source": {
         "source": "github",
-        "repo": "elecnix/claude-gh-monitor"
+        "repo": "elecnix/claude-gh-monitor",
+        "ref": "d466ae268512cff8e7c30d36a0a48a274032ed23"
       },
       "description": "Monitor GitHub pull requests in Claude Code by wrapping the gh monitor CLI."
     },
@@ -18,7 +19,8 @@
       "name": "agent-identity",
       "source": {
         "source": "github",
-        "repo": "elecnix/claude-agent-identity"
+        "repo": "elecnix/claude-agent-identity",
+        "ref": "v0.1.0"
       },
       "description": "Gives every Claude Code session a minted agent handle such as cc-swift-koala-42."
     },
@@ -26,7 +28,8 @@
       "name": "skills-lock-autoinstall",
       "source": {
         "source": "github",
-        "repo": "elecnix/skills-lock-autoinstall"
+        "repo": "elecnix/skills-lock-autoinstall",
+        "ref": "v0.3.1"
       },
       "description": "Auto-installs agent skills from an npx skills lock file (skills-lock.json) on session start."
     },
