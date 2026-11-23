@@ -1,0 +1,34 @@
+{
+  "name": "elecnix-plugins",
+  "description": "Claude Code plugins by elecnix: gh-monitor, agent-identity, and skills-lock-autoinstall.",
+  "owner": {
+    "name": "Nicolas Marchildon",
+    "url": "https://github.com/elecnix"
+  },
+  "plugins": [
+    {
+      "name": "gh-monitor",
+      "source": {
+        "source": "github",
+        "repo": "elecnix/claude-gh-monitor"
+      },
+      "description": "Monitor GitHub pull requests in Claude Code by wrapping the gh monitor CLI."
+    },
+    {
+      "name": "agent-identity",
+      "source": {
+        "source": "github",
+        "repo": "elecnix/claude-agent-identity"
+      },
+      "description": "Gives every Claude Code session a minted agent handle such as cc-swift-koala-42."
+    },
+    {
+      "name": "skills-lock-autoinstall",
+      "source": {
+        "source": "github",
+        "repo": "elecnix/skills-lock-autoinstall"
+      },
+      "description": "Auto-installs agent skills from an npx skills lock file (skills-lock.json) on session start."
+    }
+  ]
+}
