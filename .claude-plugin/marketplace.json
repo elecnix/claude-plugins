@@ -8,6 +8,7 @@
   "plugins": [
     {
       "name": "gh-monitor",
+      "$comment": "The ref is the claude-plugin tag, at d466ae2, because the repository has no version tag. That tag marks release 0.1.1, the version its plugin.json declares. Pin a version tag here once the repository has one.",
       "source": {
         "source": "github",
         "repo": "elecnix/claude-gh-monitor",
@@ -35,6 +36,7 @@
     },
     {
       "name": "your-attention",
+      "$comment": "Installs come from the claude-plugin tag, at a5f70d5, where the plugin manifest first appears. Why not v0.1.1? That newest version tag comes before the manifest, so it can't install as a plugin. Pin a version tag here once a release contains .claude-plugin/plugin.json.",
       "source": {
         "source": "github",
         "repo": "elecnix/your-attention",
