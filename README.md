@@ -16,6 +16,12 @@ Or inside a Claude Code session:
 /plugin marketplace add elecnix/claude-plugins
 ```
 
+Adding the marketplace by its HTTPS URL skips the SSH probe, which matters on a machine with no GitHub SSH key:
+
+```sh
+claude plugin marketplace add https://github.com/elecnix/claude-plugins.git
+```
+
 ## Install a plugin
 
 ```sh
@@ -33,6 +39,14 @@ claude plugin install gh-monitor@elecnix-plugins
 | `bellwether` | [elecnix/bellwether](https://github.com/elecnix/bellwether) | Starts child coding agents in herdr tabs, and starts a new turn in the parent when a child reports, goes idle, blocks, stalls or exits. |
 
 Each entry pins a tag, so a push to a plugin's repository changes nothing until a commit here moves the pin. `bellwether` is the exception: it has no tag yet, so its entry follows `main` until its next release.
+
+## Install without a GitHub SSH key
+
+Every plugin entry names its repository as an `https://` URL, so Claude Code clones it with `git` over HTTPS. A machine with no SSH key for github.com installs and updates these plugins with no extra setup.
+
+Claude Code documents this form as the [`url` plugin source](https://code.claude.com/docs/en/plugins/marketplace-reference#plugin-sources), whose `url` field takes a full git URL and whose `ref` field pins a branch or tag. The `github` source type instead clones over SSH, and a plugin update never falls back to HTTPS, so a `github` entry fails on that machine with `fatal: Could not read from remote repository`. That failure is why the entries no longer use it.
+
+`claude plugin marketplace add` and `claude plugin marketplace update` still fall back to HTTPS by themselves, printing `SSH not configured, cloning via HTTPS`. Adding the marketplace by its HTTPS URL avoids the probe altogether.
 
 `gh-monitor` is a channel plugin, so Claude Code loads it only when you pass the development channel flag at launch:
 
