@@ -32,6 +32,8 @@ claude plugin install gh-monitor@elecnix-plugins
 | `your-attention` | [elecnix/your-attention](https://github.com/elecnix/your-attention) | Gives a session an inbox where its questions arrive as cards, and sends your answers back to it. |
 | `bellwether` | [elecnix/bellwether](https://github.com/elecnix/bellwether) | Starts child coding agents in herdr tabs, and starts a new turn in the parent when a child reports, goes idle, blocks, stalls or exits. |
 
+Each entry pins a tag, so a push to a plugin's repository changes nothing until a commit here moves the pin. `bellwether` is the exception: it has no tag yet, so its entry follows `main` until its next release.
+
 `gh-monitor` is a channel plugin, so Claude Code loads it only when you pass the development channel flag at launch:
 
 ```sh

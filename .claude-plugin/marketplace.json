@@ -44,6 +44,7 @@
     },
     {
       "name": "bellwether",
+      "$comment": "The ref follows main because Bellwether has no git tag yet. Pin a tag here at its next release. Until then, an install takes the head of main, and the version in its plugin.json names the last npm release, not that commit.",
       "source": {
         "source": "github",
         "repo": "elecnix/bellwether",
