@@ -1,6 +1,6 @@
 {
   "name": "elecnix-plugins",
-  "description": "Claude Code plugins by elecnix: gh-monitor, agent-identity, and skills-lock-autoinstall.",
+  "description": "Claude Code plugins by elecnix: gh-monitor, agent-identity, skills-lock-autoinstall, your-attention, and bellwether.",
   "owner": {
     "name": "Nicolas Marchildon",
     "url": "https://github.com/elecnix"
@@ -41,6 +41,15 @@
         "ref": "claude-plugin"
       },
       "description": "One inbox where every coding agent asks you questions as cards, and your answers reach them at once."
+    },
+    {
+      "name": "bellwether",
+      "source": {
+        "source": "github",
+        "repo": "elecnix/bellwether",
+        "ref": "main"
+      },
+      "description": "Start a child coding agent in a new herdr tab and get a new turn in the parent when it reports, goes idle, blocks, stalls or exits."
     }
   ]
 }
