@@ -10,8 +10,8 @@
       "name": "gh-monitor",
       "$comment": "The ref is the claude-plugin tag, at d466ae2, because the repository has no version tag. That tag marks release 0.1.1, the version its plugin.json declares. Pin a version tag here once the repository has one.",
       "source": {
-        "source": "github",
-        "repo": "elecnix/claude-gh-monitor",
+        "source": "url",
+        "url": "https://github.com/elecnix/claude-gh-monitor.git",
         "ref": "claude-plugin"
       },
       "description": "Monitor GitHub pull requests in Claude Code by wrapping the gh monitor CLI."
@@ -19,8 +19,8 @@
     {
       "name": "agent-identity",
       "source": {
-        "source": "github",
-        "repo": "elecnix/claude-agent-identity",
+        "source": "url",
+        "url": "https://github.com/elecnix/claude-agent-identity.git",
         "ref": "v0.1.0"
       },
       "description": "Gives every Claude Code session a minted agent handle such as cc-swift-koala-42."
@@ -28,8 +28,8 @@
     {
       "name": "skills-lock-autoinstall",
       "source": {
-        "source": "github",
-        "repo": "elecnix/skills-lock-autoinstall",
+        "source": "url",
+        "url": "https://github.com/elecnix/skills-lock-autoinstall.git",
         "ref": "v0.3.1"
       },
       "description": "Auto-installs agent skills from an npx skills lock file (skills-lock.json) on session start."
@@ -38,8 +38,8 @@
       "name": "your-attention",
       "$comment": "Installs come from the claude-plugin tag, at a5f70d5, where the plugin manifest first appears. Why not v0.1.1? That newest version tag comes before the manifest, so it can't install as a plugin. Pin a version tag here once a release contains .claude-plugin/plugin.json.",
       "source": {
-        "source": "github",
-        "repo": "elecnix/your-attention",
+        "source": "url",
+        "url": "https://github.com/elecnix/your-attention.git",
         "ref": "claude-plugin"
       },
       "description": "One inbox where every coding agent asks you questions as cards, and your answers reach them at once."
@@ -48,8 +48,8 @@
       "name": "bellwether",
       "$comment": "The ref follows main because Bellwether has no git tag yet. Pin a tag here at its next release. Until then, an install takes the head of main, and the version in its plugin.json names the last npm release, not that commit.",
       "source": {
-        "source": "github",
-        "repo": "elecnix/bellwether",
+        "source": "url",
+        "url": "https://github.com/elecnix/bellwether.git",
         "ref": "main"
       },
       "description": "Start a child coding agent in a new herdr tab and get a new turn in the parent when it reports, goes idle, blocks, stalls or exits."
